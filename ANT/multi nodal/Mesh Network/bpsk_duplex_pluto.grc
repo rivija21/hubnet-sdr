@@ -1,31 +1,27 @@
 options:
   parameters:
+    alias: ''
     author: Rivija Pesara (framing from Barry Duggan BPSK example)
     catch_exceptions: 'False'
-    category: '[GRC Hier Blocks]'
-    cmake_opt: ''
     comment: ''
     copyright: ''
     description: 'BPSK network node: 4-channel FDMA mesh (6 MS/s, one-sided plan),
       self-assigned channels and addresses, closed-loop gain staging, Selective Repeat
       ARQ per peer, end-to-end encryption per pair, browser chat (r6.1-mesh)'
-    gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: qt_gui
+    generator_class_name: PythonQtGuiGenerator
+    generator_module: gnuradio.grc.workflows.python_qt_gui
     hier_block_src_path: '.:'
     id: bpsk_duplex_pluto
     max_nouts: '0'
     output_language: python
-    placement: (0,0)
     qt_qss_theme: ''
     realtime_scheduling: ''
     run: 'True'
     run_command: '{python} -u {filename}'
-    run_options: prompt
-    sizing_mode: fixed
     thread_safe_setters: ''
     title: BPSK Mesh Node (Pluto, 4-channel FDMA, r6.1)
-    window_size: (1000,1000)
   states:
     bus_sink: false
     bus_source: false
@@ -89,7 +85,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [712, 452]
+    coordinate: [568, 392.0]
     rotation: 0
     state: enabled
 - name: decim
@@ -229,7 +225,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [300, 1840]
+    coordinate: [240, 1832.0]
     rotation: 0
     state: enabled
 - name: adc_pdu
@@ -246,7 +242,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [680, 1840]
+    coordinate: [752, 1848.0]
     rotation: 0
     state: enabled
 - name: adc_pkt
@@ -282,7 +278,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [560, 640]
+    coordinate: [504, 648.0]
     rotation: 0
     state: enabled
 - name: afc_ch1
@@ -299,7 +295,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [560, 940]
+    coordinate: [536, 944.0]
     rotation: 0
     state: enabled
 - name: afc_ch2
@@ -333,7 +329,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [560, 1540]
+    coordinate: [536, 1544.0]
     rotation: 0
     state: enabled
 - name: agc
@@ -374,7 +370,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [660, 700]
+    coordinate: [592, 776.0]
     rotation: 0
     state: enabled
 - name: agc_ch1
@@ -396,7 +392,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [660, 1000]
+    coordinate: [680, 1088.0]
     rotation: 0
     state: enabled
 - name: agc_ch2
@@ -440,7 +436,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [660, 1600]
+    coordinate: [688, 1656.0]
     rotation: 0
     state: enabled
 - name: arq_window
@@ -476,7 +472,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1860, 640]
+    coordinate: [2248, 608.0]
     rotation: 0
     state: enabled
 - name: bits_to_vec_ch1
@@ -494,7 +490,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1860, 940]
+    coordinate: [2264, 1112.0]
     rotation: 0
     state: enabled
 - name: bits_to_vec_ch2
@@ -512,7 +508,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1860, 1240]
+    coordinate: [2336, 1432.0]
     rotation: 0
     state: enabled
 - name: bits_to_vec_ch3
@@ -530,7 +526,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1860, 1540]
+    coordinate: [2280, 1760.0]
     rotation: 0
     state: enabled
 - name: blocks_message_strobe_0
@@ -547,7 +543,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2420, 492]
+    coordinate: [2760, 576.0]
     rotation: 0
     state: enabled
 - name: center_freq
@@ -618,7 +614,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [300, 640]
+    coordinate: [200, 632.0]
     rotation: 0
     state: enabled
 - name: chan_filter_ch1
@@ -638,7 +634,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [300, 940]
+    coordinate: [264, 944.0]
     rotation: 0
     state: enabled
 - name: chan_filter_ch2
@@ -678,7 +674,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [300, 1540]
+    coordinate: [264, 1528.0]
     rotation: 0
     state: enabled
 - name: channel
@@ -714,7 +710,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1460, 860]
+    coordinate: [1856, 920.0]
     rotation: 0
     state: enabled
 - name: const_keep_ch1
@@ -733,7 +729,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1460, 1160]
+    coordinate: [1872, 1328.0]
     rotation: 0
     state: enabled
 - name: const_keep_ch2
@@ -752,7 +748,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1460, 1460]
+    coordinate: [1856, 1608.0]
     rotation: 0
     state: enabled
 - name: const_keep_ch3
@@ -771,7 +767,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1460, 1760]
+    coordinate: [1824, 1832.0]
     rotation: 0
     state: enabled
 - name: const_sink_ch0
@@ -863,7 +859,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 860]
+    coordinate: [2072, 984.0]
     rotation: 0
     state: enabled
 - name: const_sink_ch1
@@ -955,7 +951,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 1160]
+    coordinate: [2064, 1320.0]
     rotation: 0
     state: enabled
 - name: const_sink_ch2
@@ -1047,7 +1043,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 1460]
+    coordinate: [2048, 1648.0]
     rotation: 0
     state: enabled
 - name: const_sink_ch3
@@ -1139,7 +1135,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 1760]
+    coordinate: [2008, 1856.0]
     rotation: 0
     state: enabled
 - name: costas_ch0
@@ -1157,7 +1153,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1240, 640]
+    coordinate: [1456, 576.0]
     rotation: 0
     state: enabled
 - name: costas_ch1
@@ -1175,7 +1171,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1240, 940]
+    coordinate: [1408, 968.0]
     rotation: 0
     state: enabled
 - name: costas_ch2
@@ -1193,7 +1189,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1240, 1240]
+    coordinate: [1464, 1264.0]
     rotation: 0
     state: enabled
 - name: costas_ch3
@@ -1211,7 +1207,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1240, 1540]
+    coordinate: [1448, 1576.0]
     rotation: 0
     state: enabled
 - name: decoder_ch0
@@ -1227,7 +1223,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1460, 640]
+    coordinate: [1784, 592.0]
     rotation: 0
     state: enabled
 - name: decoder_ch1
@@ -1243,7 +1239,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1460, 940]
+    coordinate: [1728, 1032.0]
     rotation: 0
     state: enabled
 - name: decoder_ch2
@@ -1259,7 +1255,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1460, 1240]
+    coordinate: [1864, 1424.0]
     rotation: 0
     state: enabled
 - name: decoder_ch3
@@ -1275,7 +1271,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1460, 1540]
+    coordinate: [1808, 1712.0]
     rotation: 0
     state: enabled
 - name: deframer_ch0
@@ -1353,7 +1349,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2060, 640]
+    coordinate: [2440, 600.0]
     rotation: 0
     state: enabled
 - name: deframer_ch1
@@ -1431,7 +1427,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2060, 940]
+    coordinate: [2472, 1104.0]
     rotation: 0
     state: enabled
 - name: deframer_ch2
@@ -1509,7 +1505,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2060, 1240]
+    coordinate: [2552, 1408.0]
     rotation: 0
     state: enabled
 - name: deframer_ch3
@@ -1587,7 +1583,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2060, 1540]
+    coordinate: [2536, 1736.0]
     rotation: 0
     state: enabled
 - name: diff_decoder_ch0
@@ -1604,7 +1600,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 640]
+    coordinate: [2032, 584.0]
     rotation: 0
     state: enabled
 - name: diff_decoder_ch1
@@ -1621,7 +1617,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 940]
+    coordinate: [2048, 1088.0]
     rotation: 0
     state: enabled
 - name: diff_decoder_ch2
@@ -1638,7 +1634,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 1240]
+    coordinate: [2104, 1416.0]
     rotation: 0
     state: enabled
 - name: diff_decoder_ch3
@@ -1655,7 +1651,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 1540]
+    coordinate: [2056, 1752.0]
     rotation: 0
     state: enabled
 - name: http_port
@@ -1698,7 +1694,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [3420, 672]
+    coordinate: [4120, 1076.0]
     rotation: 0
     state: enabled
 - name: iio_pluto_source_0
@@ -1743,7 +1739,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [888, 452]
+    coordinate: [744, 392.0]
     rotation: 0
     state: enabled
 - name: iq_keep_ch0
@@ -1762,7 +1758,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 810]
+    coordinate: [2048, 896.0]
     rotation: 0
     state: enabled
 - name: iq_keep_ch1
@@ -1781,7 +1777,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 1110]
+    coordinate: [1856, 1224.0]
     rotation: 0
     state: enabled
 - name: iq_keep_ch2
@@ -1800,7 +1796,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 1410]
+    coordinate: [2048, 1560.0]
     rotation: 0
     state: enabled
 - name: iq_keep_ch3
@@ -1819,7 +1815,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1660, 1710]
+    coordinate: [2048, 1944.0]
     rotation: 0
     state: enabled
 - name: iq_pdu_ch0
@@ -1836,7 +1832,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2020, 810]
+    coordinate: [2440, 984.0]
     rotation: 0
     state: enabled
 - name: iq_pdu_ch1
@@ -1853,7 +1849,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2020, 1110]
+    coordinate: [2368, 1240.0]
     rotation: 0
     state: enabled
 - name: iq_pdu_ch2
@@ -1870,7 +1866,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2020, 1410]
+    coordinate: [2480, 1568.0]
     rotation: 0
     state: enabled
 - name: iq_pdu_ch3
@@ -1887,7 +1883,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2020, 1710]
+    coordinate: [2496, 1960.0]
     rotation: 0
     state: enabled
 - name: iq_pkt_ch0
@@ -1906,7 +1902,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1820, 810]
+    coordinate: [2232, 904.0]
     rotation: 0
     state: enabled
 - name: iq_pkt_ch1
@@ -1925,7 +1921,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1820, 1110]
+    coordinate: [2112, 1232.0]
     rotation: 0
     state: enabled
 - name: iq_pkt_ch2
@@ -1944,7 +1940,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1820, 1410]
+    coordinate: [2208, 1560.0]
     rotation: 0
     state: enabled
 - name: iq_pkt_ch3
@@ -1963,7 +1959,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1820, 1710]
+    coordinate: [2240, 1952.0]
     rotation: 0
     state: enabled
 - name: keys_dir
@@ -2491,22 +2487,22 @@ blocks:
       (''keys_dir'', "''keys''"), (''window'', ''32''), (''channel'', ''-1''), (''ch_spacing'',
       ''600000.0''), (''ch_first'', ''450000.0''), (''radio_rate'', ''6000000.0''),
       (''rx_gain'', ''30''), (''tx_atten'', ''50''), (''agc'', ''True''), (''telemetry'',
-      ''True''), (''plan_file'', "''''"), (''count_ou'', ''True'')], [(''chat_in'',
-      ''message'', 1), (''iq2'', ''message'', 1), (''meas2'', ''message'', 1), (''rx2'',
-      ''message'', 1), (''iq1'', ''message'', 1), (''meas1'', ''message'', 1), (''rx1'',
-      ''message'', 1), (''iq0'', ''message'', 1), (''meas0'', ''message'', 1), (''rx0'',
-      ''message'', 1), (''txstat'', ''message'', 1), (''adc'', ''message'', 1), (''tick'',
-      ''message'', 1), (''rx_frame'', ''message'', 1), (''iq3'', ''message'', 1),
-      (''meas3'', ''message'', 1), (''rx3'', ''message'', 1)], [(''afc3'', ''message'',
-      1), (''afc2'', ''message'', 1), (''afc1'', ''message'', 1), (''afc0'', ''message'',
-      1), (''log'', ''message'', 1), (''tx_attr'', ''message'', 1), (''rx_attr'',
-      ''message'', 1), (''tx_ctl'', ''message'', 1), (''tx_en'', ''message'', 1),
-      (''tx_frame'', ''message'', 1)], ''BPSK network node: MAC, ARQ link layer, encryption,
-      chat UI.'', [''http_port'', ''open_ui'', ''radio_rate''])'
+      ''True''), (''plan_file'', "''''"), (''count_ou'', ''True'')], [(''iq1'', ''message'',
+      1), (''meas1'', ''message'', 1), (''rx1'', ''message'', 1), (''rx0'', ''message'',
+      1), (''txstat'', ''message'', 1), (''iq3'', ''message'', 1), (''meas3'', ''message'',
+      1), (''rx3'', ''message'', 1), (''iq0'', ''message'', 1), (''meas0'', ''message'',
+      1), (''tick'', ''message'', 1), (''iq2'', ''message'', 1), (''meas2'', ''message'',
+      1), (''rx2'', ''message'', 1), (''adc'', ''message'', 1), (''rx_frame'', ''message'',
+      1), (''chat_in'', ''message'', 1)], [(''afc3'', ''message'', 1), (''afc2'',
+      ''message'', 1), (''afc1'', ''message'', 1), (''afc0'', ''message'', 1), (''log'',
+      ''message'', 1), (''tx_attr'', ''message'', 1), (''rx_attr'', ''message'', 1),
+      (''tx_ctl'', ''message'', 1), (''tx_en'', ''message'', 1), (''tx_frame'', ''message'',
+      1)], ''BPSK network node: MAC, ARQ link layer, encryption, chat UI.'', [''http_port'',
+      ''open_ui'', ''radio_rate''])'
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2420, 1092]
+    coordinate: [2808, 976.0]
     rotation: 0
     state: enabled
 - name: meas_keep_ch0
@@ -2525,7 +2521,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1240, 750]
+    coordinate: [1496, 760.0]
     rotation: 0
     state: enabled
 - name: meas_keep_ch1
@@ -2544,7 +2540,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1240, 1050]
+    coordinate: [1360, 1160.0]
     rotation: 0
     state: enabled
 - name: meas_keep_ch2
@@ -2563,7 +2559,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1240, 1350]
+    coordinate: [1512, 1456.0]
     rotation: 0
     state: enabled
 - name: meas_keep_ch3
@@ -2582,7 +2578,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1240, 1650]
+    coordinate: [1584, 1920.0]
     rotation: 0
     state: enabled
 - name: meas_pdu_ch0
@@ -2599,7 +2595,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1600, 750]
+    coordinate: [1944, 816.0]
     rotation: 0
     state: enabled
 - name: meas_pdu_ch1
@@ -2616,7 +2612,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1600, 1050]
+    coordinate: [1864, 1160.0]
     rotation: 0
     state: enabled
 - name: meas_pdu_ch2
@@ -2633,7 +2629,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1600, 1350]
+    coordinate: [1992, 1504.0]
     rotation: 0
     state: enabled
 - name: meas_pdu_ch3
@@ -2650,7 +2646,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1600, 1650]
+    coordinate: [2056, 2080.0]
     rotation: 0
     state: enabled
 - name: meas_pkt_ch0
@@ -2669,7 +2665,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1400, 750]
+    coordinate: [1704, 768.0]
     rotation: 0
     state: enabled
 - name: meas_pkt_ch1
@@ -2688,7 +2684,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1400, 1050]
+    coordinate: [1544, 1168.0]
     rotation: 0
     state: enabled
 - name: meas_pkt_ch2
@@ -2707,7 +2703,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1400, 1350]
+    coordinate: [1696, 1488.0]
     rotation: 0
     state: enabled
 - name: meas_pkt_ch3
@@ -2726,7 +2722,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1400, 1650]
+    coordinate: [1776, 1992.0]
     rotation: 0
     state: enabled
 - name: my_addr
@@ -2850,7 +2846,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2420, 592]
+    coordinate: [2816, 744.0]
     rotation: 0
     state: enabled
 - name: radio_rate
@@ -2887,7 +2883,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [760, 640]
+    coordinate: [816, 552.0]
     rotation: 0
     state: enabled
 - name: rrc_ch1
@@ -2907,7 +2903,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [760, 940]
+    coordinate: [840, 928.0]
     rotation: 0
     state: enabled
 - name: rrc_ch2
@@ -2947,7 +2943,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [760, 1540]
+    coordinate: [792, 1496.0]
     rotation: 0
     state: enabled
 - name: rx_attr
@@ -3100,7 +3096,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [880, 1960]
+    coordinate: [688, 1952.0]
     rotation: 0
     state: enabled
 - name: security
@@ -3144,7 +3140,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [960, 640]
+    coordinate: [960, 668.0]
     rotation: 0
     state: enabled
 - name: symbol_sync_ch1
@@ -3171,7 +3167,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [960, 940]
+    coordinate: [1000, 1028.0]
     rotation: 0
     state: enabled
 - name: symbol_sync_ch2
@@ -3389,7 +3385,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2700, 692]
+    coordinate: [3248, 1200.0]
     rotation: 0
     state: enabled
 - name: tx_interp_filter
@@ -3408,7 +3404,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2960, 692]
+    coordinate: [3520, 1208.0]
     rotation: 0
     state: enabled
 - name: tx_shift
@@ -3425,7 +3421,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [3200, 692]
+    coordinate: [3824, 1144.0]
     rotation: 0
     state: enabled
 - name: tx_spec_keep
@@ -3444,7 +3440,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [480, 2240]
+    coordinate: [3776, 1360.0]
     rotation: 0
     state: enabled
 - name: tx_spectrum
@@ -3525,7 +3521,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [880, 2240]
+    coordinate: [4064, 1368.0]
     rotation: 0
     state: enabled
 - name: uri
