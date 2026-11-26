@@ -1,4 +1,4 @@
-# BPSK full-duplex link — PlutoSDR / ANTSDR
+# BPSK full-duplex link 
 
 FDD full-duplex extension of the working `Bpsk_file_transfer_transmit/receive_pluto`
 flowgraphs. Same PHY (BPSK, 250 ksym/s, RRC α=0.35, differential, 64-bit access code,
