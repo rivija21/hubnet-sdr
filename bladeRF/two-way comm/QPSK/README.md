@@ -1,4 +1,4 @@
-# QPSK full-duplex chat / file link (ANT-SDR E200 · PlutoSDR)
+# QPSK full-duplex chat / file link 
 
 A GNU Radio 3.10 application derived from your `GNU_Radio_Example_QPSK_tx_rx.grc`
 lab flowgraph. Two nodes, FDD full duplex, text and file transfer with CRC and
